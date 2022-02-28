@@ -1,0 +1,82 @@
+{
+    "data": [
+        {
+            "title": "待处理任务",
+            "icon": "icon-renwu",
+            "colorstyle": "color:#a80735",
+            "url": "/dclrw"
+        },
+        {
+            "title": "销售进度",
+            "icon": "icon-mubiaox",
+            "colorstyle": "color:#7e225e",
+            "url": "/xsjd"
+        },
+        {
+            "title": "入库记录",
+            "icon": "icon-ruku",
+            "colorstyle": "color:#9f6531",
+            "url": "/rukumingxi"
+        },
+        {
+            "title": "陈列任务",
+            "icon": "icon-renwuliebiaogai",
+            "colorstyle": "color:#9d3622",
+            "url": "/clrw"
+        },
+        {
+            "title": "签收任务",
+            "icon": "icon-renwuwancheng",
+            "colorstyle": "color:#9f6531",
+            "url": "/qsrw"
+        },
+        {
+            "title": "终端活动",
+            "icon": "icon-tuiguangneirong",
+            "colorstyle": "color:#a80735",
+            "url": "/zdhd"
+        },
+        {
+            "title": "我的协议",
+            "icon": "icon-xieyixiangqing",
+            "colorstyle": "color:#7e225e",
+            "url": "/wdxy"
+        },
+        {
+            "title": "我的红包",
+            "icon": "icon-hongbao",
+            "colorstyle": "color:#9d3622",
+            "url": "/wdhb"
+        },
+        {
+            "title": "宴席红包",
+            "icon": "icon-xunzhang",
+            "colorstyle": "color:#7e225e",
+            "url": "/yxhb"
+        },
+        {
+            "title": "会员中心",
+            "icon": "icon-huiyuan",
+            "colorstyle": "color:#a80735",
+            "url": "/hyzx"
+        },
+        {
+            "title": "邀请有礼",
+            "icon": "icon-youjimianban-kuosan",
+            "colorstyle": "color:#9d3622",
+            "url": "/yqyl"
+        },
+        {
+            "title": "春节活动",
+            "icon": "icon-chunjie",
+            "colorstyle": "color:#9f6531",
+            "url": "/cjhd"
+        },
+        {
+            "title": "任务提报",
+            "icon": "icon-tibaotongji",
+            "colorstyle": "color:#a80735",
+            "url": "/yxtb"
+        }
+    ]
+}

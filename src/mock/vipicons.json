@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "tittle": "待发货",
+      "icon": "icon-truck-full",
+      "colorstyle": "color:#a80735"
+    },
+    {
+      "tittle": "待收货",
+      "icon": "icon-tubiaozhizuomoban",
+      "colorstyle": "color:#7e225e"
+    },
+    {
+      "tittle": "已完成",
+      "icon": "icon-truck-full",
+      "colorstyle": "color:#9f6531"
+    },
+    {
+      "tittle": "订单作废",
+      "icon": "icon-dingdanquxiao",
+      "colorstyle": "color:#9d3622"
+    }
+  ]
+}
