@@ -146,6 +146,11 @@ const routes = [
     name: 'white',
     component: ()=> import("../components/white.vue")
   },
+  {
+    path: '/mainabout',
+    name: 'About',
+    component: ()=> import("../components/main/about.vue")
+  },
 ]
 
 const router = new VueRouter({

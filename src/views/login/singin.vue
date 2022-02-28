@@ -2,7 +2,7 @@
   <div>
 
     <h1>
-      登录
+      注册
       <topbar />
     </h1>
         <div class="bgp"><img src="/loginBGP.jpg" alt=""></div>

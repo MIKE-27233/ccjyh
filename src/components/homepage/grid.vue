@@ -12,6 +12,7 @@
         <span class="words">{{ v.title }}</span>
       </div>
     </div>
+    <div class="block"></div>
   </div>
 </template>
 
@@ -53,5 +54,8 @@ export default {
 }
 .words {
   font-size: 0.1rem;
+}
+.block{
+  height: .48rem;
 }
 </style>

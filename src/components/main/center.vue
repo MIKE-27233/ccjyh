@@ -18,7 +18,7 @@ export default {
         {
           title: "我的资料",
           icon: "icon-wodeziliao",
-          url: "#",
+          url: "/mainabout",
           colorstyle: "color:#a80735",
         },
         {
