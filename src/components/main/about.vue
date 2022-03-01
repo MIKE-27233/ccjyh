@@ -5,9 +5,14 @@
      <table>
          <thead>基本信息</thead>
          <tbody>
-             <tr v-for="(v,i) in userinfo" :key="i">
+        <tr v-for="(v,i) in userinfo" :key="i">
              <td>{{v.title}}</td>
              <td>{{v.val}}</td>
+         
+         </tr>
+         <tr>
+             <td>入库数量</td>
+             <td>    {{this.$store.state.rukuinfo.length}}</td>
          </tr>
          </tbody>
      </table>
@@ -25,6 +30,7 @@ export default {
             {title:"联系电话",val:"XXX"},
             {title:"终端编号",val:"NO.007108"},
             {title:"终端级别",val:"NO.黄金门店"},
+
         ]
         }
     },
@@ -34,7 +40,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 table{
     padding: .2rem;
 }

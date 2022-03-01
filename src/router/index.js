@@ -23,6 +23,11 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
+    name: 'Welcome',
+    component: () => import('../views/welcome.vue')
+  },
+  {
+    path: '/home',
     name: 'Home',
     // import Home from '../views/homepage.vue'
     component: () => import('../views/homepage.vue')
@@ -46,7 +51,8 @@ const routes = [
     path: '/main',
     name: 'Main',
     // import Main from '../views/main.vue'
-    component: () => import('../views/main.vue')
+    component: () => import('../views/main.vue'),
+    
   },
   {
     path: '/login',
@@ -151,12 +157,54 @@ const routes = [
     name: 'About',
     component: ()=> import("../components/main/about.vue")
   },
+  {
+      path: '/pluspage',
+      name: 'Pluspage',
+      component: ()=> import('../components/pluspage/pluspage.vue'),
+      children:[
+        {
+          path: '/pluspage1',
+          name: 'Pluspage1',
+          component: ()=> import('../components/pluspage/pluspage1.vue')
+        },
+        {
+          path: '/pluspage2',
+          name: 'Pluspage2',
+          component: ()=> import('../components/pluspage/pluspage2.vue')
+        },
+      ]
+  },
+  {
+    path:"/pluspage",
+    redirect:"/pluspage1"
+  },
+  {
+    path:"/ruku",
+    // 重新定位方向
+    redirect:"/rukumingxi"
+  },
+  {
+    path: '*',
+    name: 'no',
+    component: () => import('../views/welcome.vue')
+  }
 ]
 
 const router = new VueRouter({
   mode: 'hash',
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to,from,next)=>{
+  console.log("to",to)
+  console.log("from",from)
+  if(to.path=="/dead"){
+    alert("您没有登录请您登录后在试！！！")
+    next("/main")
+  }else{
+    next()
+  }
 })
 
 export default router

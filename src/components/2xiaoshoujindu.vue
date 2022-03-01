@@ -33,7 +33,6 @@ import Top from "@/components/homepage/homepageTop.vue";
 export default {
   created() {
     this.goodsinfo = this.$store.state.rukuinfo;
-    console.log(this.goodsinfo);
     for (const x of this.goodsinfo) {
       let a = x.time.length-5
       this.dateTag.push(x.time.slice(0, 1) + x.time.slice(a)); //此处是将月份和年份单独取出进行拼接，获取到与日期筛选器相同格式的值并存入dateTage中
@@ -70,7 +69,6 @@ export default {
       dateTag: [],
       goodsinfo: [],
       taskNum: {},
-      // downList: [0, 0, 0, 0],
       taskpermonth: 0,
       downList: [
         { title: "第一季度", task: 40, down:0},

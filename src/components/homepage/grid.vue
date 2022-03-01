@@ -53,6 +53,7 @@ export default {
   font-size: 0.4rem;
 }
 .words {
+  margin-top: .1rem;
   font-size: 0.1rem;
 }
 .block{

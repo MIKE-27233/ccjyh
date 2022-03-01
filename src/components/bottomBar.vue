@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-    <router-link to="/" @click="getColor()">
+    <router-link to="/home" @click="getColor()">
     <span class="iconfont icon-shouye"></span> 首页
     </router-link>
     <router-link to="/search">
